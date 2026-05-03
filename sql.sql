@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `rig_player_warnings` (
     PRIMARY KEY (`id`),
     KEY `unique_id_idx` (`unique_id`),
     FOREIGN KEY (`unique_id`) REFERENCES `rig_players` (`unique_id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `rig_player_appearances` (
     `unique_id` VARCHAR(255) NOT NULL,
